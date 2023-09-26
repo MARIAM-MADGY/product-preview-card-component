@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:  "Montserrat", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(30, 38%, 92%);
+    font-size: 14px;
+
+}
+.test{
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    background-color: white;
+    width: 650px;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    font-family: "Fraunces", serif ;
+    color: hsl(212, 21%, 14%);
+    font-size: 2rem;
+}
+.title{
+    color: hsl(228, 12%, 48%);
+    
+    letter-spacing: 4px;
+}
+
+.descripe{
+    color: hsl(228, 12%, 48%);
+    
+}
+
+.rigth{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.prices{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.bold-price{
+    font-family: "Fraunces", serif;
+    color:hsl(158, 36%, 37%);
+    font-size: 1.7rem;
+    margin-right: 20px;
+}
+
+.ligth-price{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    margin-top: 10px;
+
+}
+
+.btn{
+    padding: 20px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    border-style: none;
+    height: 50px;
+    font-weight: 700;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.btn .icon{
+    margin-right: 96px;
+    margin-top: -10px;
+}
+
+.btn div{
+    margin-top: -20px;
+    margin-right: -28px;
+}
+
+
+.test .photo img{
+    display: flex;
+    border-top-left-radius:20px ;
+    border-bottom-left-radius: 20px;
+    flex: 1 0 50%;
+    height: 500px;
+    width: 325px;
+    object-fit: cover;
+
+}
+
+@media screen and (max-width:1000px){
+
+    .test{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+    h1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+
+    .test .photo img{
+        width: 100%;
+        border-top-right-radius: 20px;
+        height: 327px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius:0 ;
+        
+        
+    }
+    .prices{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .btn{
+        width:328px;
+        
+    }
+
+    .btn div{
+        font-size: 15px;
+    }
+    .info{
+        width: 300px;
+        font-size: 34px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .descripe{
+    width: 293px;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    }
+    .bold-price{
+        font-size: 40px;
+    }
+}
